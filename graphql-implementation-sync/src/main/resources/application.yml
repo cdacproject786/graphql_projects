@@ -1,0 +1,18 @@
+server:
+  port: 9000
+spring:
+  application:
+    name : EMPLOYEE-SERVICE
+
+
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQLDialect
+  datasource:
+    url: jdbc:mysql://localhost:3307/employee
+    username: root
+    password: 123

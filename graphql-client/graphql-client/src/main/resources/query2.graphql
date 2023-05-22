@@ -1,0 +1,10 @@
+query{
+    getPlayerById(
+        id : 3
+    ){
+        id
+        name
+        club
+        nationality
+    }
+}

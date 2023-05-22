@@ -1,0 +1,23 @@
+server:
+  port: 9090
+spring:
+  data:
+    r2dbc:
+      repositories:
+        enabled: true
+  r2dbc:
+    initialization-mode: always
+    url: r2dbc:postgresql://localhost:5432/player
+    username: postgres
+    password: postgres
+    properties:
+      lock_timeout: 40000
+      statement_timeout: 40000
+      idle_in_transaction_session_timeout: 40000
+      connectTimeout: PT55S
+    pool:
+      enabled: false
+
+graphql:
+  servlet:
+    mapping: /api/graphql

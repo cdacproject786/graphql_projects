@@ -1,0 +1,8 @@
+query{
+    getAllPlayers{
+        id
+        name
+        club
+        nationality
+    }
+}

@@ -1,0 +1,25 @@
+type Query {
+    geAllEmployees: [Employee]
+    getEmployeeById(id: ID): Employee
+}
+
+type Mutation {
+    addEmployee(employeeRequest: EmployeeRequest!): Employee
+    updateEmployee(employeeRequest: EmployeeRequest!): Employee
+    deleteEmployeeById(id: ID): Employee
+}
+
+type Employee {
+    id: ID
+    name: String
+    age: Int
+    phone: String
+    nationality: String
+}
+
+input EmployeeRequest {
+    name: String!
+    age: Int!
+    phone: String!
+    nationality: String!
+}

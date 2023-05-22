@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="cockroachdb-CRUD" target="20" />
+      <module name="domain-service" target="17" />
+      <module name="email-service" target="17" />
+      <module name="graphql-client" target="20" />
+      <module name="graphql-client (1) (com.graphql-client)" target="20" />
+      <module name="graphql-client (2) (com.ducatillon.graphql-client)" target="1.5" />
+      <module name="graphql-client-auto" target="20" />
+      <module name="graphql-implementation-sync" target="20" />
+      <module name="order-service" target="17" />
+      <module name="reactive-graphql" target="20" />
+      <module name="spring-webflux-grpc" target="17" />
+      <module name="stock-service" target="17" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="cockroachdb-CRUD" options="-parameters" />
+      <module name="domain-service" options="-parameters" />
+      <module name="email-service" options="-parameters" />
+      <module name="graphql-client" options="-parameters" />
+      <module name="graphql-client (1) (com.graphql-client)" options="-parameters" />
+      <module name="graphql-client-auto" options="-parameters" />
+      <module name="graphql-implementation-sync" options="-parameters" />
+      <module name="order-service" options="-parameters" />
+      <module name="reactive-graphql" options="-parameters" />
+      <module name="spring-webflux-grpc" options="-parameters" />
+      <module name="stock-service" options="-parameters" />
+    </option>
+  </component>
+</project>
